@@ -1,0 +1,1150 @@
+  * {
+            margin: 0;
+            padding: 0;
+           box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        /*body*/
+        .background-body{
+            background-image:linear-gradient(rgba(0,0,0.5),rgba(0,0,0,0.5)),url('./lap7.JPG') ;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 50vh;
+            width: 100%;
+            margin: 0;
+        }
+        .background-body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            font-weight: 600;
+            text-align: center;
+            padding: 8%;
+            color: white;
+        }
+        .background-body p{
+             font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            text-align: center;
+            padding: 2%;
+            color: white;
+        }
+        #navigation-button {
+            border: 1px solid white;
+            background: white;
+            height: 3rem;
+            width: 3rem;
+            border-radius: 50%;
+            margin-top: 1rem;
+        }
+        @keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to header */
+.background-body header.body-text {
+    animation: fadeInText 1.5s ease-in-out forwards;
+}
+
+        /*product*/
+
+
+        main{
+             padding: 80px 5%;
+             
+        }
+        #product-header{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            font-weight: 600;
+            color: black;
+        }
+      
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .product-card {
+            border: 1px solid white;
+        /*box-shadow: 0px 8px 8px black;*/
+         box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1), 
+        0 1px 2px  rgba(0, 0, 0, 0.1);
+           width: 45vh;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius:10px ;
+            border-bottom-left-radius: 10px;
+         padding-top: 20px;
+         position: relative;
+         overflow: hidden;
+      
+        height: 61vh;
+        transition: all 0.5s ease-out;
+
+        }
+        .card-text{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 10px 25px;
+            padding-top: 55px;
+        }
+        #lorem{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            padding: 15px 25px ;
+            font-weight: 600;
+        }
+         #decsription{
+          font-size: 13px;
+          padding: 30px 25px;
+          color: black;  
+          font-family: Arial, Helvetica, sans-serif;
+
+       }
+        #card-button{
+           padding: 10px 16px;
+           position: absolute;
+           overflow: hidden;
+            width: 90%;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+           margin-left: 15px;
+            margin-top: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: Arial, Helvetica, sans-serif;
+            box-shadow:0 1px 2px 1px rgba(0, 0, 0, 0.1), 
+        0 1px 2px  rgba(0, 0, 0, 0.1); 
+        }
+        #card-button:hover{
+        background: #cec9c9;
+        color: black;
+
+
+        }
+        .card-div{
+            margin-top:60px ;
+        }
+        .product-icon img{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+             margin-top: 80px;
+            width:100% ;
+            height: 200px;
+            position: absolute;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+       
+       
+        .product-card:hover {
+            transform: translateY(-4px);
+            border-color: black;
+        }
+
+        .product-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80px;
+        }
+
+       
+
+        .product-label {
+            font-size: 13px;
+            color: #94a3b8;
+        }
+        
+        /* Filter Section Styles */
+        .filter-section {
+            display: flex;
+            gap: 8px;
+            margin-top: 1.5rem;
+           
+           
+        }
+      
+
+        .filter-btn {
+            display: flex;
+            align-items: center;
+            padding: 10px 18px;
+            border: 1px solid black;
+            background: white;
+            color: black;
+            border-radius: 24px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .filter-btn:hover {
+          background:rgb(156, 153, 153) ;
+            border-color: rgba(255, 255, 255, 0.3);
+            color: white;
+        }
+
+        .filter-btn-active {
+             display: flex;
+            align-items: center;
+            padding: 10px 18px;
+            border: 1px solid rgb(156, 153, 153);
+            background: rgb(156, 153, 153);
+            border-radius: 24px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+              
+        }
+
+        .filter-btn.active:hover {
+            background: #2563eb;
+            border-color: #2563eb;
+        }
+
+        .filter-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Hero Banner Section */
+        .hero-banner {
+            background: linear-gradient(180deg, rgb(19, 19, 19) 0%, rgb(56, 53, 53) 100%);
+            border-radius: 16px;
+            padding: 60px 40px;
+            margin: 60px 0;
+            text-align: center;
+            color: white;
+            box-shadow:0 1px 2px 1px rgba(0, 0, 0, 0.1), 
+        0 1px 2px  rgba(0, 0, 0, 0.1); 
+        }
+
+        .hero-content h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 24px;
+            opacity: 0.95;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero-btn {
+            background: white;
+            color: #3b82f6;
+            border: none;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Featured Deals Section */
+        .featured-deals {
+            margin-top: 80px;
+        }
+
+        .deals-header {
+            font-size: 28px;
+            font-weight: 700;
+            color: rgb(20, 20, 20);
+            margin-bottom: 32px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .deals-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .deal-card {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1), 
+            0 1px 2px  rgba(0, 0, 0, 0.1);
+        }
+
+        .deal-card:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgb(68, 67, 67);
+            transform: translateY(-8px);
+            box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.1), 
+            0 1px 2px  rgba(0, 0, 0, 0.1);
+        }
+
+        .deal-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: #ef4444;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            z-index: 10;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .deal-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            background:#cec9c9;
+        }
+
+        .deal-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .deal-card:hover .deal-image img {
+            transform: scale(1.05);
+        }
+
+        .deal-info {
+            padding: 20px;
+        }
+
+        .deal-info h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: black;
+            margin-bottom: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .deal-desc {
+            font-size: 13px;
+            color: black;
+            margin-bottom: 16px;
+            line-height: 1.4;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .price-section {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 16px;
+            
+        }
+
+        .price-original {
+            font-size: 18px;
+            color: black;
+            text-decoration: line-through;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .price-current {
+            font-size: 18px;
+            font-weight: 700;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        .deal-btn {
+            width: 100%;
+            background: black;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .deal-btn:hover {
+            background: #cec9c9;
+            color: black;
+        }
+        /* Animation on scroll effect*/
+
+
+       
+
+        /* Large Desktop and above (1400px+) */
+        @media (min-width: 1400px) {
+            .products-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 24px;
+            }
+            
+            .product-card {
+                width: 100%;
+                max-width: 400px;
+            }
+            
+            .deals-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 28px;
+            }
+        }
+
+        /* Desktop (1200px - 1399px) */
+        @media (max-width: 1399px) and (min-width: 1200px) {
+            .products-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+            }
+            
+            .product-card {
+                width: 100%;
+                max-width: 350px;
+            }
+            
+            .deals-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+            }
+        }
+
+        /* Large Tablet / Small Laptop (1024px - 1199px) */
+        @media (max-width: 1199px) and (min-width: 1024px) {
+            main {
+                padding: 60px 4%;
+            }
+            
+            .background-body {
+                font-size: 36px;
+                padding: 6%;
+            }
+            
+            .background-body p {
+                font-size: 18px;
+            }
+            
+            #product-header {
+                font-size: 24px;
+            }
+            
+            .products-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+            
+            .product-card {
+                width: 100%;
+                max-width: none;
+                height: auto;
+                min-height: 480px;
+            }
+            
+            .filter-section {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            
+            .filter-btn, .filter-btn-active {
+                padding: 10px 16px;
+                font-size: 13px;
+            }
+            
+            .hero-banner {
+                padding: 50px 30px;
+            }
+            
+            .hero-content h2 {
+                font-size: 32px;
+            }
+            
+            .hero-content p {
+                font-size: 17px;
+            }
+            
+            .deals-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+            
+            .deals-header {
+                font-size: 26px;
+            }
+        }
+
+        /* Tablet (768px - 1023px) */
+        @media (max-width: 1023px) and (min-width: 768px) {
+            main {
+                padding: 50px 4%;
+            }
+            
+            .background-body {
+                font-size: 32px;
+                padding: 8%;
+                height: 45vh;
+            }
+            
+            .background-body p {
+                font-size: 16px;
+                padding: 3%;
+            }
+            
+            #navigation-button {
+                height: 2.5rem;
+                width: 2.5rem;
+            }
+            
+            #product-header {
+                font-size: 22px;
+            }
+            
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                margin-top: 30px;
+            }
+            
+            .product-card {
+                width: 100%;
+                max-width: none;
+                height: auto;
+                min-height: 450px;
+            }
+            
+            .card-text {
+                font-size: 15px;
+                padding: 10px 20px;
+                padding-top: 50px;
+            }
+            
+            #lorem {
+                font-size: 17px;
+                padding: 12px 20px;
+            }
+            
+            #card-button {
+                padding: 10px 14px;
+                font-size: 13px;
+                margin-left: 12px;
+            }
+            
+            .filter-section {
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+            
+            .filter-btn, .filter-btn-active {
+                padding: 9px 14px;
+                font-size: 13px;
+            }
+            
+            .hero-banner {
+                padding: 45px 25px;
+                margin: 50px 0;
+            }
+            
+            .hero-content h2 {
+                font-size: 28px;
+            }
+            
+            .hero-content p {
+                font-size: 16px;
+            }
+            
+            .hero-btn {
+                padding: 12px 28px;
+                font-size: 15px;
+            }
+            
+            .deals-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 18px;
+            }
+            
+            .deals-header {
+                font-size: 24px;
+                margin-bottom: 28px;
+            }
+            
+            .deal-info h4 {
+                font-size: 15px;
+            }
+            
+            .deal-desc {
+                font-size: 12px;
+            }
+        }
+
+        /* Mobile Large (481px - 767px) */
+        @media (max-width: 767px) and (min-width: 481px) {
+            main {
+                padding: 40px 4%;
+            }
+            
+            .background-body {
+                font-size: 28px;
+                padding: 10%;
+                height: 40vh;
+            }
+            
+            .background-body p {
+                font-size: 15px;
+                padding: 4%;
+            }
+            
+            #navigation-button {
+                height: 2.5rem;
+                width: 2.5rem;
+                margin-top: 0.8rem;
+            }
+            
+            #product-header {
+                font-size: 20px;
+            }
+            
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+                margin-top: 30px;
+            }
+            
+            .product-card {
+                width: 100%;
+                max-width: none;
+                height: auto;
+                min-height: 420px;
+                padding-top: 15px;
+            }
+            
+            .card-text {
+                font-size: 14px;
+                padding: 8px 18px;
+                padding-top: 45px;
+            }
+            
+            #lorem {
+                font-size: 16px;
+                padding: 10px 18px;
+            }
+            
+            #card-button {
+                padding: 9px 12px;
+                font-size: 13px;
+                margin-left: 10px;
+                margin-top: 6px;
+            }
+            
+            .product-icon img {
+                margin-top: 70px;
+                height: 180px;
+            }
+            
+            .filter-section {
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+            
+            .filter-btn, .filter-btn-active {
+                padding: 8px 14px;
+                font-size: 12px;
+            }
+            
+            .hero-banner {
+                padding: 40px 20px;
+                margin: 45px 0;
+            }
+            
+            .hero-content h2 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            
+            .hero-content p {
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+            
+            .hero-btn {
+                padding: 12px 24px;
+                font-size: 14px;
+            }
+            
+            .deals-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+            
+            .deals-header {
+                font-size: 22px;
+                margin-bottom: 24px;
+            }
+            
+            .deal-badge {
+                padding: 5px 10px;
+                font-size: 11px;
+            }
+            
+            .deal-image {
+                height: 180px;
+            }
+            
+            .deal-info {
+                padding: 16px;
+            }
+            
+            .deal-info h4 {
+                font-size: 14px;
+            }
+            
+            .deal-desc {
+                font-size: 12px;
+                margin-bottom: 14px;
+            }
+            
+            .price-original, .price-current {
+                font-size: 16px;
+            }
+            
+            .deal-btn {
+                padding: 9px 14px;
+                font-size: 13px;
+            }
+        }
+
+        /* Mobile Medium (max-width: 768px) - Enhanced */
+        @media (max-width: 768px) {
+            main {
+                padding: 40px 3%;
+            }
+            
+            .background-body {
+                font-size: 26px;
+                padding: 12%;
+                height: 40vh;
+            }
+
+            .background-body p {
+                font-size: 14px;
+                padding: 4%;
+            }
+            
+            #navigation-button {
+                height: 2.5rem;
+                width: 2.5rem;
+            }
+            
+            #product-header {
+                font-size: 20px;
+            }
+
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+                margin-top: 30px;
+            }
+
+            .product-card {
+                width: 100%;
+                max-width: none;
+                height: auto;
+                min-height: 400px;
+                padding-top: 15px;
+            }
+            
+            .card-text {
+                font-size: 14px;
+                padding: 8px 16px;
+                padding-top: 40px;
+            }
+            
+            #lorem {
+                font-size: 16px;
+                padding: 10px 16px;
+            }
+            
+            #card-button {
+                padding: 9px 12px;
+                font-size: 12px;
+                margin-left: 10px;
+            }
+            
+            .product-icon img {
+                margin-top: 65px;
+                height: 170px;
+            }
+            
+            .filter-section {
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+            
+            .filter-btn, .filter-btn-active {
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+
+            .hero-banner {
+                padding: 35px 20px;
+                margin: 40px 0;
+            }
+
+            .hero-content h2 {
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+
+            .hero-content p {
+                font-size: 14px;
+                margin-bottom: 18px;
+            }
+            
+            .hero-btn {
+                padding: 11px 22px;
+                font-size: 14px;
+            }
+
+            .deals-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            .deals-header {
+                font-size: 20px;
+                margin-bottom: 24px;
+            }
+            
+            .deal-badge {
+                padding: 5px 10px;
+                font-size: 11px;
+                top: 10px;
+                right: 10px;
+            }
+            
+            .deal-image {
+                height: 170px;
+            }
+            
+            .deal-info {
+                padding: 16px;
+            }
+            
+            .deal-info h4 {
+                font-size: 14px;
+                margin-bottom: 6px;
+            }
+            
+            .deal-desc {
+                font-size: 12px;
+                margin-bottom: 12px;
+            }
+            
+            .price-section {
+                gap: 10px;
+                margin-bottom: 14px;
+            }
+            
+            .price-original {
+                font-size: 16px;
+            }
+            
+            .price-current {
+                font-size: 16px;
+            }
+            
+            .deal-btn {
+                padding: 9px 14px;
+                font-size: 13px;
+            }
+        }
+
+        /* Mobile Small (max-width: 480px) - Enhanced */
+        @media (max-width: 480px) {
+            main {
+                padding: 30px 4%;
+            }
+            
+            .background-body {
+                font-size: 22px;
+                padding: 15%;
+                height: 38vh;
+            }
+            
+            .background-body p {
+                font-size: 13px;
+                padding: 5%;
+            }
+            
+            #navigation-button {
+                height: 2.2rem;
+                width: 2.2rem;
+                margin-top: 0.5rem;
+            }
+            
+            #navigation-button svg {
+                width: 20px;
+                height: 20px;
+            }
+            
+            #product-header {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                margin-top: 25px;
+            }
+
+            .product-card {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                padding-top: 15px;
+                min-height: 380px;
+            }
+            
+            .card-text {
+                font-size: 15px;
+                padding: 10px 20px;
+                padding-top: 45px;
+            }
+            
+            #lorem {
+                font-size: 17px;
+                padding: 12px 20px;
+            }
+            
+            #decription {
+                font-size: 12px;
+                padding: 8px 20px;
+            }
+            
+            #card-button {
+                padding: 10px 14px;
+                font-size: 13px;
+                width: 92%;
+                margin-left: 12px;
+                margin-top: 8px;
+            }
+            
+            .product-icon img {
+                margin-top: 75px;
+                height: 190px;
+            }
+
+            .filter-section {
+                flex-wrap: wrap;
+                gap: 8px;
+                margin-top: 1.2rem;
+            }
+
+            .filter-btn, .filter-btn-active {
+                padding: 8px 14px;
+                font-size: 12px;
+                border-radius: 20px;
+            }
+
+            .hero-banner {
+                padding: 30px 20px;
+                margin: 35px 0;
+                border-radius: 12px;
+            }
+
+            .hero-content h2 {
+                font-size: 20px;
+                margin-bottom: 8px;
+            }
+
+            .hero-content p {
+                font-size: 13px;
+                margin-bottom: 16px;
+            }
+            
+            .hero-btn {
+                padding: 10px 20px;
+                font-size: 13px;
+            }
+
+            .deals-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                margin-bottom: 30px;
+            }
+
+            .deals-header {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            .deal-card {
+                max-width: 100%;
+                border-radius: 10px;
+            }
+            
+            .deal-badge {
+                padding: 4px 8px;
+                font-size: 10px;
+                top: 8px;
+                right: 8px;
+            }
+            
+            .deal-image {
+                height: 200px;
+            }
+            
+            .deal-info {
+                padding: 18px;
+            }
+            
+            .deal-info h4 {
+                font-size: 15px;
+                margin-bottom: 8px;
+            }
+            
+            .deal-desc {
+                font-size: 12px;
+                margin-bottom: 14px;
+                line-height: 1.5;
+            }
+            
+            .price-section {
+                gap: 10px;
+                margin-bottom: 14px;
+            }
+            
+            .price-original {
+                font-size: 16px;
+            }
+            
+            .price-current {
+                font-size: 17px;
+            }
+            
+            .deal-btn {
+                padding: 10px 16px;
+                font-size: 13px;
+                border-radius: 6px;
+            }
+        }
+        
+        /* Extra Small Mobile (max-width: 360px) */
+        @media (max-width: 360px) {
+            .background-body {
+                font-size: 20px;
+                padding: 18%;
+                height: 35vh;
+            }
+            
+            .background-body p {
+                font-size: 12px;
+            }
+            
+            #navigation-button {
+                height: 2rem;
+                width: 2rem;
+            }
+            
+            #product-header {
+                font-size: 17px;
+            }
+            
+            .product-card {
+                min-height: 360px;
+            }
+            
+            .card-text {
+                font-size: 14px;
+                padding-top: 40px;
+            }
+            
+            #lorem {
+                font-size: 16px;
+            }
+            
+            .product-icon img {
+                margin-top: 70px;
+                height: 170px;
+            }
+            
+            .filter-btn, .filter-btn-active {
+                padding: 7px 12px;
+                font-size: 11px;
+            }
+            
+            .hero-content h2 {
+                font-size: 18px;
+            }
+            
+            .hero-content p {
+                font-size: 12px;
+            }
+            
+            .deals-header {
+                font-size: 17px;
+            }
+            
+            .deal-info h4 {
+                font-size: 14px;
+            }
+            
+            .deal-desc {
+                font-size: 11px;
+            }
+            
+            .price-original, .price-current {
+                font-size: 15px;
+            }
+        }
+
+        
