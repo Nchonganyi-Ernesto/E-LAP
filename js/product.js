@@ -29,7 +29,7 @@ filterButtons.forEach(button => {
             if (cardCategory === selectedCategory) {
                 card.style.display = 'block';
                 // Add fade-in animation
-                card.style.animation = 'fadeIn 0.3s ease-in';
+                card.style.animation = 'fadeIn 0.5s ease-in';
             } else {
                 card.style.display = 'none';
             }
@@ -52,3 +52,4 @@ style.textContent = `
         }
     }
 `;
+document.head.appendChild(style);
