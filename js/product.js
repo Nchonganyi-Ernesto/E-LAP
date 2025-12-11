@@ -53,3 +53,12 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+//harmburger menu
+const harmburger = document.querySelector('.harmburger');
+const navMenu = document.querySelector('.nav-links');
+ 
+harmburger.addEventListener('click' , () => {
+    harmburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+   
+});
