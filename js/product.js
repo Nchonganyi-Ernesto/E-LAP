@@ -19,20 +19,29 @@ filterButtons.forEach(button => {
         });
         
         // Add active class to clicked button
-        this.classList.remove('filter-btn');
+       this.classList.remove('filter-btn');
         this.classList.add('filter-btn-active');
         
         // Filter product cards
         productCards.forEach(card => {
-            const cardCategory = card.getAttribute('data-category');
-            
+            if (selectedCategory === 'all') {
+                card.style.display = 'block';
+                // Add fade-in animation
+                 card.style.animation = 'none';          // wipe the current one
+                 void card.offsetHeight; // trigger reflow
+                card.style.animation = 'fadeIn 0.5s ease-in';
+            } else{
+                const cardCategory = card.getAttribute('data-category');
             if (cardCategory === selectedCategory) {
                 card.style.display = 'block';
                 // Add fade-in animation
+                  card.style.animation = 'none';          // wipe the current one
+                 void card.offsetHeight; // trigger reflow
                 card.style.animation = 'fadeIn 0.5s ease-in';
             } else {
                 card.style.display = 'none';
             }
+        }
         });
     });
 });

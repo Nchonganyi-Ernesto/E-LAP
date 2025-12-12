@@ -674,11 +674,12 @@ color: grey;
             top: 60px;
             left: 100%;
             width: 50%;
-            height: 25vh;
+            height: 28vh;
             background-color: white;
             transition: left 0.3s ease-in-out;
             z-index: 10;
             box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+            
             
             
         }
@@ -709,6 +710,7 @@ color: grey;
         .main-nav{
             display: flex;
             align-items: center;
+            margin-top: 16px;
         }
         .card-div{
             padding: 5px 5px;
