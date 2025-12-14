@@ -1274,7 +1274,14 @@ color: grey;
         /* Mobile Small (max-width: 480px) - Enhanced */
         @media (max-width: 480px) {
             main {
-                padding: 30px 4%;
+                padding: 30px 3%;
+            }
+            .logo a {
+                font-size: 24px;
+            }
+            .container-header-content{
+                padding: 10px 0;
+
             }
             
             .background-body {
@@ -1510,61 +1517,7 @@ color: grey;
                 font-size: 15px;
             }
         }
-        /* ---------- FOOTER RESPONSIVENESS ---------- */
 
-/* 1.  Tablets (≤ 992 px) → 2 equal columns, centre text */
-/*
-@media (max-width: 992px) {
-  .container-footer-grid {
-    flex-wrap: wrap;               /* allow wrapping */
-   /* height: auto;                  /* kill fixed height */
-   /* padding: 40px 0;
-  }
-  .footer-links,
-  .footer-products,
-  .footer-contact,
-  .footer-end {
-    flex: 0 0 48%;                 /* two columns */
-  /*  margin: 0 1% 30px;             /* space under each block */
-    /*text-align: center;
-  }
-  .footer-bottom p {
-    margin: 0;
-    padding: 20px 0 30px;
-  }
-}
-
-/* 2.  Phones (≤ 576 px) → single column, full width */
-/*
-@media (max-width: 576px) {
-  .main-footer {
-    padding: 30px 20px;            /* smaller side padding */
-  /*}
-  .container-footer-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer-links,
-  .footer-products,
-  .footer-contact,
-  .footer-end {
-    flex: 0 0 100%;
-    margin: 0 0 25px;
-  }
-  .footer-links h2,
-  .footer-products h2,
-  .footer-contact h2,
-  .footer-end h2 {
-    font-size: 1.1rem;
-  }
-  .footer-links ul,
-  .footer-products ul {
-    padding-left: 0;               /* kill default indent */
- /* }
-  .footer-bottom p {
-    font-size: 0.8rem;
-  }
-} */
   /* Footer Responsive Media Queries */
         
         /* Mobile Small (max-width: 480px) */
