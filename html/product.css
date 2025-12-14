@@ -787,6 +787,7 @@ color: grey;
             background-color: transparent;
         }
     }
+    
         /* Large Desktop and above (1400px+) */
    @media (min-width: 1400px) {
             .products-grid {
@@ -1351,7 +1352,7 @@ color: grey;
             
             .product-icon img {
                margin-top: 75px;
-                height: 190px;
+                height: 200px;
             }
 
             .filter-section {
