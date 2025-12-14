@@ -1321,9 +1321,10 @@ color: grey;
             .product-card {
                 width: 100%;
                 max-width: 100%;
-                height: auto;
+               height: auto;
                 /*padding-top: 15px;*/
                 min-height: 380px;
+                
             }
             
             .card-text {
@@ -1352,7 +1353,8 @@ color: grey;
             
             .product-icon img {
                margin-top: 75px;
-                height: 200px;
+                height: 200px !important;
+                top: auto;
             }
 
             .filter-section {
