@@ -250,12 +250,16 @@
         .product-icon img{
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
-            margin-top: 80px;
+            margin-top: 80px ;
             width:100% ;
             height: 200px;
-           position: absolute;
+           position: relative !important;
             overflow: hidden;
             transition: all 0.3s ease;
+            /*margin-top: 0 !important;*/
+            object-fit: cover;
+            left: auto;
+
         }
        
        
@@ -271,6 +275,8 @@
             align-items: center;
             justify-content: center;
             height: 80px;
+            position: relative;
+            overflow: visible;
              
         }
 
@@ -1353,8 +1359,7 @@ color: grey;
             
             .product-icon img {
                margin-top: 75px;
-                height: 200px !important;
-                top: auto;
+                height: 200px ;
             }
 
             .filter-section {
