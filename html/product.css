@@ -189,12 +189,11 @@
             border-bottom-right-radius: 10px;
             border-top-right-radius:10px ;
             border-bottom-left-radius: 10px;
-         padding-top: 20px;
+       /* padding-top: 20px;*/
          position: relative;
          overflow: hidden;
-      
         height: auto;
-        min-height: 400px;
+        min-height: 380px;
         transition: all 0.5s ease-out;
 
         }
