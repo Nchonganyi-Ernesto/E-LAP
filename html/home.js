@@ -1,3 +1,22 @@
+// Hero Section Slide-In Animation
+window.addEventListener('load', () => {
+    const heroText = document.querySelector('.hero-text');
+    const heroProduct = document.querySelector('.hero-product');
+
+    // Trigger slide-in animations with slight delay for better effect
+    setTimeout(() => {
+        if (heroText) {
+            heroText.classList.add('slide-in');
+        }
+    }, 100);
+
+    setTimeout(() => {
+        if (heroProduct) {
+            heroProduct.classList.add('slide-in');
+        }
+    }, 300);
+});
+
 // Scroll Animation Observer
 const observerOptions = {
     threshold: 0.2,
