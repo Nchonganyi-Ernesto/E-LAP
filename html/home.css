@@ -787,6 +787,9 @@ section {
     .hero-rating {
         flex-wrap: wrap;
     }
+    .logo{
+        font-size: 24px;
+    }
 
     .product-features {
         position: static;
@@ -809,6 +812,9 @@ section {
     .hero-content p {
         font-size: 1.2rem;
         padding: 0 1rem;
+    }
+    .hero-container{
+        padding-top: 5rem;
     }
 
     .section-title {
@@ -834,6 +840,7 @@ section {
     .testimonial-card {
         padding: 2rem;
     }
+    
 }
 
 /*Media querry for harmburger-menu*/
@@ -868,8 +875,8 @@ section {
         position: fixed;
         top: 60px;
         left: 100%;
-        width: 50%;
-        height: 35vh;
+        width: 80%;
+        height: 50vh;
         background-color: white;
         transition: left 0.3s ease-in-out;
         z-index: 10;
@@ -878,7 +885,7 @@ section {
 
     .nav-links {
         flex-direction: column;
-        padding: 5px 20px;
+        padding: 5px 0px;
 
     }
 
@@ -912,11 +919,20 @@ section {
         display: flex;
         align-items: center;
         margin-top: 15px;
+       
     }
 
     .body-text {
         margin-top: 65px;
         height: 23vh;
+    }
+    .btn-signup{
+        width: fit-content;
+        margin: 10px 35.1%;
+    }
+    .btn-login{
+        width: 6rem;
+        margin: 10px 35.1%;
     }
 }
 
@@ -942,8 +958,8 @@ section {
         position: fixed;
         top: 60px;
         left: 100%;
-        width: 50%;
-        height: 33vh;
+        width: 90%;
+        height: 45vh;
         background-color: white;
         transition: left 0.3s ease-in-out;
         z-index: 10;
