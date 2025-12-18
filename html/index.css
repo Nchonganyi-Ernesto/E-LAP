@@ -876,7 +876,7 @@ section {
         top: 60px;
         left: 100%;
         width: 80%;
-        height: 50vh;
+        height: 100vh;
         background-color: white;
         transition: left 0.3s ease-in-out;
         z-index: 10;
@@ -959,7 +959,7 @@ section {
         top: 60px;
         left: 100%;
         width: 90%;
-        height: 45vh;
+        height: 100vh;
         background-color: white;
         transition: left 0.3s ease-in-out;
         z-index: 10;
@@ -1032,8 +1032,8 @@ section {
         position: fixed;
         top: 60px;
         left: 100%;
-        width: 50%;
-        height: 45vh;
+        width: 80%;
+        height: 100vh;
         background-color: white;
         transition: left 0.3s ease-in-out;
         z-index: 10;

@@ -202,7 +202,7 @@
         }
         #product-header{
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 25px;
+            font-size: 2.0rem;
             font-weight: 600;
             color: black;
         }
@@ -428,7 +428,7 @@
         }
 
         .deals-header {
-            font-size: 28px;
+            font-size: 2.0rem;
             font-weight: 700;
             color: rgb(20, 20, 20);
             margin-bottom: 32px;
@@ -646,8 +646,8 @@ color: grey;
             position: fixed;
             top: 60px;
             left: 100%;
-            width: 50%;
-            height: 35vh;
+            width: 80%;
+            height: 100vh;
             background-color: white;
             transition: left 0.3s ease-in-out;
             z-index: 10;
@@ -686,6 +686,14 @@ color: grey;
         .body-text{
             margin-top: 5rem;
         }
+         .btn-signup{
+        width: fit-content;
+        margin: 10px 35.1%;
+    }
+    .btn-login{
+        width: 6rem;
+        margin: 10px 35.1%;
+    }
     }
 
     /* Mobile Medium (481px - 767px) */
@@ -708,8 +716,8 @@ color: grey;
             position: fixed;
             top: 60px;
             left: 100%;
-            width: 50%;
-            height: 33vh;
+            width: 80%;
+            height: 100vh;
             background-color: white;
             transition: left 0.3s ease-in-out;
             z-index: 10;
@@ -771,8 +779,8 @@ color: grey;
             position: fixed;
             top: 60px;
             left: 100%;
-            width: 50%;
-            height: 45vh;
+            width: 80%;
+            height: 100vh;
             background-color: white;
             transition: left 0.3s ease-in-out;
             z-index: 10;
